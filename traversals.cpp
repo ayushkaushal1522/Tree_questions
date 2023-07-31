@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-// time and space complexity is given by O(n)
+// time and space complexity is given by O(n) for inorder ,preorder and for the postorder as well.
+
 class Node{
     public:
         int data;
@@ -12,6 +13,17 @@ class Node{
             right=NULL;
         }    
 };
+void iterativepreorder(Node* root){
+    stack<Node*> st;
+    st.push(root);
+    while(!st.empty()){
+        auto temp=st.top();
+        st.pop();
+        if(temp->right) st.push(temp->right);
+        if(temp->left) st.push(temp->left);
+        cout<<temp->data<<" ";
+    }
+}
 void inorder(Node* root){
     if(root==NULL) return ;
     inorder(root->left);
@@ -48,6 +60,8 @@ int main(){
     preorder(root);
     cout<<endl;
     postorder(root);
+    cout<<endl;
+    iterativepreorder(root);
     cout<<endl;
 
 
