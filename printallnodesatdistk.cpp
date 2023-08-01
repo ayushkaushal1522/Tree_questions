@@ -1,5 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+//Time complexity is given by O(n)+O(n).
+//Space complexity is given by O(n) + O(n) + O(n) ~~ O(n) only.
+
+
 class Node{
     public:
         int data;
