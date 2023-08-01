@@ -1,7 +1,7 @@
 //balance binary tree is a tree which has leftHeight - rightHeight<=1;
 #include<bits/stdc++.h>
 using namespace std;
-// time and space complexity for the dine approach is O(n) both.
+// time and space complexity for the dine approach is O(n) for both.
 
 class Node{
     public:
