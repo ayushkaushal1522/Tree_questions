@@ -3,6 +3,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//time complexity is given by O(n)*logn where logn extra is for the 
+// time taken by the hashmap
+
 class Node{
     public:
         int data;
